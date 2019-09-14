@@ -128,6 +128,6 @@ STATICFILES_STORAGE = 'bosg.storage_backends.GoogleCloudStaticStorage'
 GS_MEDIA_BUCKET_NAME = 'bos_bucket'
 GS_STATIC_BUCKET_NAME = 'bos_bucket'
 # define the static urls for both static and media
-STATIC_URL = 'https://storage.googleapis.com/{}/static/'.format(GS_STATIC_BUCKET_NAME)
-MEDIA_URL = 'https://storage.googleapis.com/{}/media/'.format(GS_MEDIA_BUCKET_NAME)
+STATIC_URL = 'https://storage.googleapis.com/{}/'.format(GS_STATIC_BUCKET_NAME)
+MEDIA_URL = 'https://storage.googleapis.com/{}/'.format(GS_MEDIA_BUCKET_NAME)
 django_heroku.settings(locals())
