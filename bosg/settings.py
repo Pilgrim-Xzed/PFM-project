@@ -119,25 +119,15 @@ USE_TZ = True
 
 
 
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"]= os.path.join(BASE_DIR,'golden-torch-247507-296c817c0c64.json')
+# add the correct application credentials
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"] =os.path.join(BASE_DIR,'golden-torch-247507-296c817c0c64.json')
 # define the default file storage for both static and media
-DEFAULT_FILE_STORAGE = 'bosg.storage_backends.GoogleCloudMediaStorage'
-STATICFILES_STORAGE = 'bosg.storage_backends.GoogleCloudStaticStorage'
+DEFAULT_FILE_STORAGE = 'config.storage_backends.GoogleCloudMediaStorage'
+STATICFILES_STORAGE = 'config.storage_backends.GoogleCloudStaticStorage'
 # add the names of the buckets
 GS_MEDIA_BUCKET_NAME = 'bos_bucket'
 GS_STATIC_BUCKET_NAME = 'bos_bucket'
-
-STATICFILES_DIRS = [os.path.join(BASE_DIR, 'staticfiles'),] 
+# define the static urls for both static and media
 STATIC_URL = 'https://storage.googleapis.com/{}/static/'.format(GS_STATIC_BUCKET_NAME)
-MEDIA_URL = 'https://storage.googleapis.com/{}/media/'.format(GS_MEDIA_BUCKET_NAME)
-
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'staticfiles'),
-]
-
-
-# Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/2.2/howto/static-files/
-
-
+MEDIA_URL = 'https://storage.googleapis.com/{}/static/'.format(GS_MEDIA_BUCKET_NAME)
 django_heroku.settings(locals())
