@@ -3,6 +3,8 @@ Modify django-storages for GCloud to set static, media folder in a bucket
 """
 from django.conf import settings
 from storages.backends.gcloud import GoogleCloudStorage
+from storages.utils import setting
+from urllib.parse import urljoin
 
 
 class GoogleCloudMediaStorage(GoogleCloudStorage):
