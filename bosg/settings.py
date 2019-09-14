@@ -127,12 +127,12 @@ STATICFILES_STORAGE = 'bosg.storage_backends.GoogleCloudStaticStorage'
 GS_MEDIA_BUCKET_NAME = 'bos_bucket'
 GS_STATIC_BUCKET_NAME = 'bos_bucket'
 
-STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static'),] 
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'staticfiles'),] 
 STATIC_URL = 'https://storage.googleapis.com/{}/static/'.format(GS_STATIC_BUCKET_NAME)
 MEDIA_URL = 'https://storage.googleapis.com/{}/media/'.format(GS_MEDIA_BUCKET_NAME)
 
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'static'),
+    os.path.join(BASE_DIR, 'staticfiles'),
 ]
 
 
