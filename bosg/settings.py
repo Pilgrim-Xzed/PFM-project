@@ -119,20 +119,16 @@ USE_TZ = True
 
 
 
-GOOGLE_APPLICATION_CREDENTIALS = os.path.join(BASE_DIR,'golden-torch-247507-296c817c0c64.json')
-
-GS_STATIC_BUCKET_NAME = 'bos_bucket'
-STATIC_URL = 'https://storage.googleapis.com/{}/'.format(GS_STATIC_BUCKET_NAME)
-
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"]= os.path.join(BASE_DIR,'golden-torch-247507-296c817c0c64.json')
+# define the default file storage for both static and media
 DEFAULT_FILE_STORAGE = 'bosg.storage_backends.GoogleCloudMediaStorage'
-STATICFILES_STORAGE =  'bosg.storage_backends.GoogleCloudStaticStorage'
-
-GS_BUCKET_NAME = 'bos_bucket'
-GS_PROJECT_ID = 'golden-torch-247507'
-GS_DEFAULT_ACL = 'publicRead'
-GS_CREDENTIALS = service_account.Credentials.from_service_account_file(
-    GOOGLE_APPLICATION_CREDENTIALS
-)
+STATICFILES_STORAGE = 'bosg.storage_backends.GoogleCloudStaticStorage'
+# add the names of the buckets
+GS_MEDIA_BUCKET_NAME = 'bos_bucket'
+GS_STATIC_BUCKET_NAME = 'bos_bucket'
+# define the static urls for both static and media
+STATIC_URL = 'https://storage.googleapis.com/{}/'.format(GS_STATIC_BUCKET_NAME)
+MEDIA_URL = 'https://storage.googleapis.com/{}/'.format(GS_MEDIA_BUCKET_NAME)
 
 
 django_heroku.settings(locals())
