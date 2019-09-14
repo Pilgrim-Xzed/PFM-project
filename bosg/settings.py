@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'budget',
+    
 ]
 
 MIDDLEWARE = [
@@ -116,10 +117,6 @@ USE_L10N = True
 
 USE_TZ = True
 
-
-# Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/2.2/howto/static-files/
-
 GOOGLE_APPLICATION_CREDENTIALS = os.path.join(BASE_DIR,'golden-torch-247507-296c817c0c64.json')
 
 DEFAULT_FILE_STORAGE = 'app.gcloud_storages.GoogleCloudMediaStorage'
@@ -130,5 +127,4 @@ GS_DEFAULT_ACL = 'publicRead'
 GS_CREDENTIALS = service_account.Credentials.from_service_account_file(
     GOOGLE_APPLICATION_CREDENTIALS
 )
-
 django_heroku.settings(locals())
