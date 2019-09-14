@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
-    'django.contrib.staticfiles',
+   
     'budget',
     
 ]
@@ -120,7 +120,8 @@ USE_TZ = True
 GOOGLE_APPLICATION_CREDENTIALS = os.path.join(BASE_DIR,'golden-torch-247507-296c817c0c64.json')
 
 DEFAULT_FILE_STORAGE = 'bosg.storage_backends.GoogleCloudMediaStorage'
-STATICFILES_STORAGE = 'bosg.storage_backends.GoogleCloudStaticStorage'
+STATICFILES_STORAGE =  'bosg.storage_backends.GoogleCloudStaticStorage'
+
 GS_BUCKET_NAME = 'bos_bucket'
 GS_PROJECT_ID = 'golden-torch-247507'
 GS_DEFAULT_ACL = 'publicRead'
