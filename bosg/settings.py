@@ -122,8 +122,8 @@ USE_TZ = True
 # add the correct application credentials
 os.environ["GOOGLE_APPLICATION_CREDENTIALS"] =os.path.join(BASE_DIR,'golden-torch-247507-296c817c0c64.json')
 # define the default file storage for both static and media
-DEFAULT_FILE_STORAGE = 'config.storage_backends.GoogleCloudMediaStorage'
-STATICFILES_STORAGE = 'config.storage_backends.GoogleCloudStaticStorage'
+DEFAULT_FILE_STORAGE = 'bosg.storage_backends.GoogleCloudMediaStorage'
+STATICFILES_STORAGE = 'bosg.storage_backends.GoogleCloudStaticStorage'
 # add the names of the buckets
 GS_MEDIA_BUCKET_NAME = 'bos_bucket'
 GS_STATIC_BUCKET_NAME = 'bos_bucket'
