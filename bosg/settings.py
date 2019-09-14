@@ -119,12 +119,13 @@ USE_TZ = True
 
 GOOGLE_APPLICATION_CREDENTIALS = os.path.join(BASE_DIR,'golden-torch-247507-296c817c0c64.json')
 
-DEFAULT_FILE_STORAGE = 'app.gcloud_storages.GoogleCloudMediaStorage'
-STATICFILES_STORAGE = 'app.gcloud_storages.GoogleCloudStaticStorage'
+DEFAULT_FILE_STORAGE = 'bosg.gcloud_storages.GoogleCloudMediaStorage'
+STATICFILES_STORAGE = 'bosg.gcloud_storages.GoogleCloudStaticStorage'
 GS_BUCKET_NAME = 'bos_bucket'
 GS_PROJECT_ID = 'golden-torch-247507'
 GS_DEFAULT_ACL = 'publicRead'
 GS_CREDENTIALS = service_account.Credentials.from_service_account_file(
     GOOGLE_APPLICATION_CREDENTIALS
 )
+
 django_heroku.settings(locals())
