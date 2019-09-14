@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/2.2/ref/settings/
 
 import os
 import django_heroku
+from google.oauth2 import service_account
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -119,23 +120,15 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
-AWS_ACCESS_KEY_ID = 'AKIAXH4DBZOURIVAUZMB'
-AWS_SECRET_ACCESS_KEY = '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'
-AWS_STORAGE_BUCKET_NAME = 'bosproject'
-AWS_S3_CUSTOM_DOMAIN = '%s.s3.amazonaws.com' % AWS_STORAGE_BUCKET_NAME
-AWS_S3_OBJECT_PARAMETERS = {
-    'CacheControl': 'max-age=86400',
-}
-AWS_DEFAULT_ACL = None
-AWS_LOCATION = 'static'
+GOOGLE_APPLICATION_CREDENTIALS = os.path.join(BASE_DIR,'golden-torch-247507-296c817c0c64.json')
 
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'static'),
-]
-STATIC_URL = 'https://%s/%s/' % (AWS_S3_CUSTOM_DOMAIN, AWS_LOCATION)
-STATICFILES_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
-# Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/2.2/howto/static-files/
+DEFAULT_FILE_STORAGE = 'app.gcloud_storages.GoogleCloudMediaStorage'
+STATICFILES_STORAGE = 'app.gcloud_storages.GoogleCloudStaticStorage'
+GS_BUCKET_NAME = 'bos_bucket'
+GS_PROJECT_ID = 'venom'
+GS_DEFAULT_ACL = 'publicRead'
+GS_CREDENTIALS = service_account.Credentials.from_service_account_file(
+    GOOGLE_APPLICATION_CREDENTIALS
+)
 
-DEFAULT_FILE_STORAGE = 'bosg.storage_backends.MediaStorage'
 django_heroku.settings(locals())

@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "golden-torch-247507",
+  "private_key_id": "296c817c0c64a0fa717d6c029b581cf05c95bc92",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDjuiyPe5FzR0T0\nB7pSCRs/wFts3OhaCLeYaG5o11jm06yeAVyY2kedp7CuSXpLbssikURuauzbk8jH\n91DVeHEckrbPvL6Hm2MdzkvB2fW3EYAcr8ry4pfjDr5lq9RnmHVlZireY3XggUOM\nGX7cBa4m68aCzA4PY9hh/AOtbBJyXE3BM2g2xL60kQ+xefXFNQ9DNQv0Q68Fbsn7\nyh9X+qyzz1nyMpnC3g9JluhoUfD67OMUkxoV5Fgz9c8uDoQle9YusNuQ+M3vXbvo\nhuow/bWgr9rHGOR3/XnjrVbMTB3Y6ew6wPDtEAiwhXO7I2hSKep+cs2sjj8KAAvc\n0Csf/MCnAgMBAAECggEACzCEE5stvwbuEDn4LlaJaTnpaoSPdV6r4fUK38np2Cwa\n29Ss5eUFbQcaIYyb64YkVkZIoRuBGE6MDtwYs7SF6+WyZ98aH/QQDB0T3RDGbkCR\nryP2ik99L3uM+jy8MUiGrcnPkQfWeSAnRbeglrnZhpeoZ5et/sf+kBBfzRV1vpRL\nK6RT9KuBBOPyEaxH2W+6Gz4cNKrLNCf/+k7gU6/B3unrch1Eh2y8cV3LpN9cgBkS\nq8ViwVKSFHRiTsTuV7eFPJo148uUO5HtWHQQyil5Gl+62KaoWaUikn5H+cmwLj06\nTdQ2dFcD+072xEyTZD10eUqyVpVUm5y3SgV79MxB0QKBgQD0zD49RpnYLx3u4RFI\nfkeTVvzXp5m2ZZuB8wcKMXR2pmGAMmTSSin/Mkt1dOnCx00vCJFc/WrYkW76V4nq\nEbM6mDfnGflSaj/wRWeRkf2qAD18CHjglpHnrspl9H7rwhPZrXdpftnQFNLQ+ZK5\nUJPG9REh919ehSY5+f30O8dTGQKBgQDuJfPZJo4z13Z8eVi0MzK3MvCWqAoH+LAm\nABu8dxzhJIxFEa2MFDp5FYLLeXz2pMSLlC7BomDGQlAbnGbYQca4KmINWOkP0eYf\nJMRll879aKLtDEE0nuOs8pCbZJJiqxmB4GrI0EZx6qC+IVlgorm+tJVLYaQW/uL4\nUgZ6cUTpvwKBgAn7/pnfNE0l9tGUanELfX3b8WoWUuWmlUYilGntBHQGazmgVI5j\nKf1Xns5Gm3YvTM2bStqBF4eHvwAE7AIZALdmF/mcDJg47yysmAHO84qogdl6Ovvm\nCENr1KN96mNRQiABvDoYS2f6QXL2iu52A+D8g9tfzIr9YUbCFIKOoZ2ZAoGADr/l\nAW8E4asXmI//cXG2U2hhREN2E5ZQepoJHbwW2s7jrSdyIznhgTxW1Hlaxv/feHGe\nD7oZ2k2jHoKqT/yK7T8awY7fKG6snQMu8sfbNxCy/pGCvFqW6VBAqo8pDdlhBA09\nL+DObCHHAN+Z5IVPkcMnd/q9KftxXUXfRtgbF4sCgYEAgNYgQ2kzNUWbL1WCGBSt\ne9oOPVOtmI0AWI42lay0XaEuk/z9Yhx3IcMAjNXOQ/7b66NbFMUIFxa41rUg4vEZ\nYE4o1p2ryq+Ve8l2b8+iBgaXs0ctnXFeFLCtd24zQ4R8BP4H+1Hb/nCnMDPQSKW7\ngDhSXwnRMDlQxqForLUwcPk=\n-----END PRIVATE KEY-----\n",
+  "client_email": "bos-project@golden-torch-247507.iam.gserviceaccount.com",
+  "client_id": "108396100065100504049",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/bos-project%40golden-torch-247507.iam.gserviceaccount.com"
+}
