@@ -125,7 +125,7 @@ GOOGLE_APPLICATION_CREDENTIALS = os.path.join(BASE_DIR,'golden-torch-247507-296c
 DEFAULT_FILE_STORAGE = 'app.gcloud_storages.GoogleCloudMediaStorage'
 STATICFILES_STORAGE = 'app.gcloud_storages.GoogleCloudStaticStorage'
 GS_BUCKET_NAME = 'bos_bucket'
-GS_PROJECT_ID = 'venom'
+GS_PROJECT_ID = 'golden-torch-247507'
 GS_DEFAULT_ACL = 'publicRead'
 GS_CREDENTIALS = service_account.Credentials.from_service_account_file(
     GOOGLE_APPLICATION_CREDENTIALS
