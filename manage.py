@@ -3,7 +3,7 @@
 import os
 import sys
 
-
+##dsadsad
 def main():
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'bosg.settings')
     try:
